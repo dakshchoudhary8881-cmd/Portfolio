@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAKSH CHOUDHARY // SYSTEMS CONSOLE v3.4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <div class="grid-bg"></div>
+    <div id="boot-overlay">
+      <div class="boot-box">
+        <div class="boot-header">
+          <span>SYSTEM DIAGNOSTIC BIOS v3.4</span>
+          <span>ARCH: x86_64 // NODE: ROORKEE</span>
+        </div>
+        <div class="boot-log" id="boot-log"></div>
+        <div class="progress-container">
+          <div class="progress-bar" id="boot-progress"></div>
+        </div>
+        <div class="boot-footer">
+          <span>MEM_OK: 64,840 KB</span>
+          <span id="boot-status-text">INITIALIZING...</span>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <a href="#" class="nav-brand">
+        <div class="status-dot"></div>
+        <span>CONSOLE://DAKSH.SYS</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#specs" class="nav-link">Specs</a></li>
+        <li><a href="#modules" class="nav-link">Modules</a></li>
+        <li><a href="#signal" class="nav-link">Signal</a></li>
+        <li><a href="#log" class="nav-link">Log</a></li>
+        <li><a href="#connect" class="nav-link">Connect</a></li>
+      </ul>
+      <div class="nav-status">
+        <span
+          >UPTIME:
+          <span class="system-clock" id="uptime-clock">00:00:00</span></span
+        >
+        <span style="color: var(--circuit)">● ONLINE</span>
+      </div>
+    </nav>
+    <main>
+      <section class="hero-section">
+        <div class="hero-webgl-container">
+          <div id="webgl-canvas"></div>
+        </div>
+
+        <div class="hero-content-grid">
+          <div class="hero-left">
+            <div class="sys-badge">
+              <span style="color: var(--circuit)">⚡</span> NODE ACTIVE //
+              B.TECH CSE (AI & ML)
+            </div>
+            <h1 class="hero-name">DAKSH CHOUDHARY</h1>
+            <div class="hero-role">
+              &gt; FRONTEND ENGINEERING INTERN &amp; FOUNDER
+            </div>
+            <p class="hero-bio">
+              Engineering scalable web systems, autonomous hardware IoT devices,
+              and AI-driven digital workflows. Bridging low-level system
+              execution with rich, high-performance web interfaces.
+            </p>
+            <div class="hero-ctas">
+              <a href="#modules" class="btn btn-primary">[ VIEW MODULES ]</a>
+              <a href="#connect" class="btn btn-secondary"
+                >[ ESTABLISH CONNECTION ]</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="telemetry-strip">
+          <div class="telemetry-col">
+            <div class="telemetry-label">CURRENT DEPLOYMENT</div>
+            <div class="telemetry-value">Frontend Intern @ Prodesk IT</div>
+          </div>
+          <div class="telemetry-col">
+            <div class="telemetry-label">VENTURE STATUS</div>
+            <div class="telemetry-value highlight">
+              Founder @ Optiq Solutions
+            </div>
+          </div>
+          <div class="telemetry-col">
+            <div class="telemetry-label">PRIMARY STACK</div>
+            <div class="telemetry-value">React 19 / Three.js / AI / IoT</div>
+          </div>
+          <div class="telemetry-col">
+            <div class="telemetry-label">OPERATIONAL TARGET</div>
+            <div class="telemetry-value" style="color: var(--circuit)">
+              Full-Stack AI Engineer
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="specs" class="section-wrapper reveal">
+        <div class="section-header">
+          <div class="section-title">
+            <span>01 // SYSTEM SPECIFICATIONS</span>
+            <span class="section-tag">HARDWARE &amp; LOGIC</span>
+          </div>
+          <div class="section-meta">NODE_ID: DC-2026-ROORKEE</div>
+        </div>
+
+        <div class="specs-grid">
+          <div class="specs-prose">
+            <p>
+              I operate at the intersection of
+              <strong>modern frontend architecture</strong>,
+              <strong>applied artificial intelligence</strong>, and
+              <strong>embedded hardware systems</strong>. Currently pursuing
+              B.Tech in CSE (AI &amp; ML) at Haridwar University, Roorkee, my
+              engineering discipline is rooted in building resilient, high-speed
+              applications that solve complex real-world bottlenecks.
+            </p>
+            <p>
+              As a <strong>Frontend Engineering Intern at Prodesk IT</strong>, I
+              craft reactive, production-grade interfaces optimized for
+              performance and strict state management. Simultaneously, as the
+              <strong>Founder of Optiq Solutions</strong>, I lead digital
+              transformation for Indian SMBs—architecting custom web platforms
+              that accelerate revenue generation and automate client operations.
+            </p>
+            <p>
+              Unlike pure software developers, my background extends directly
+              into physical systems and IoT. Having designed
+              <strong>Sentinel</strong> (a women's safety wearable) and
+              <strong>GlideCart</strong> (an autonomous airport luggage trolley)
+              for national hackathons like SIH 2025 and IIT Roorkee TIDES, I
+              treat web interfaces as the command-and-control surface for
+              real-time engineering ecosystems.
+            </p>
+
+            <div class="specs-highlight-box">
+              <div
+                style="
+                  color: var(--accent);
+                  font-weight: 700;
+                  margin-bottom: 0.4rem;
+                "
+              >
+                &gt; ARCHITECTURAL PHILOSOPHY
+              </div>
+              Minimal latency. Maximum structural clarity. Every UI component is
+              treated as an isolated, testable hardware module with
+              deterministic state and zero unhandled errors.
+            </div>
+          </div>
+
+          <div class="datasheet">
+            <div class="datasheet-header">
+              <span>SYS_DATASHEET_REV_3.4</span>
+              <span>CONFIDENTIAL // OPEN ACCESS</span>
+            </div>
+            <div class="datasheet-row">
+              <div class="datasheet-key">OPERATOR</div>
+              <div class="datasheet-val">Daksh Choudhary</div>
+            </div>
+            <div class="datasheet-row">
+              <div class="datasheet-key">PRIMARY ROLE</div>
+              <div class="datasheet-val orange">
+                Frontend Engineering Intern @ Prodesk IT
+              </div>
+            </div>
+            <div class="datasheet-row">
+              <div class="datasheet-key">LEADERSHIP</div>
+              <div class="datasheet-val amber">
+                Founder @ Optiq Solutions (Digital Agency)
+              </div>
+            </div>
+            <div class="datasheet-row">
+              <div class="datasheet-key">EDUCATION</div>
+              <div class="datasheet-val">
+                B.Tech CSE (AI &amp; ML) // Haridwar University
+              </div>
+            </div>
+            <div class="datasheet-row">
+              <div class="datasheet-key">HARDWARE / IOT</div>
+              <div class="datasheet-val green">
+                Sentinel Wearable // GlideCart Autonomous Trolley
+              </div>
+            </div>
+            <div class="datasheet-row">
+              <div class="datasheet-key">LONG-TERM TARGET</div>
+              <div class="datasheet-val">Full-Stack AI Engineer</div>
+            </div>
+            <div class="datasheet-row">
+              <div class="datasheet-key">LOCATION BASE</div>
+              <div class="datasheet-val">Roorkee / Haridwar Node, India</div>
+            </div>
+            <div class="datasheet-row">
+              <div class="datasheet-key">NODE STATUS</div>
+              <div class="datasheet-val green">
+                ONLINE // READY FOR DEPLOYMENT
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="modules" class="section-wrapper reveal">
+        <div class="section-header">
+          <div class="section-title">
+            <span>02 // DEPLOYED MODULES</span>
+            <span class="section-tag">PROJECT RACK</span>
+          </div>
+          <div class="section-meta">TOTAL UNITS: 04 ACTIVE</div>
+        </div>
+
+        <div class="modules-grid">
+          <div class="module-card tilt-card">
+            <div class="module-header">
+              <span class="module-id">[MOD-01 // KANBAN_CORE]</span>
+              <span class="module-status">ACTIVE DEPLOYMENT</span>
+            </div>
+            <h3 class="module-title">TASKFLOW</h3>
+            <p class="module-desc">
+              High-throughput productivity engine built on React 19 and Vite.
+              Features fluid 60FPS drag-and-drop orchestration via @dnd-kit,
+              dynamic priority queues, and persistent LocalStorage state
+              replication with zero backend latency.
+            </p>
+            <div class="module-tech">
+              <span class="tech-chip">React 19</span>
+              <span class="tech-chip">Vite</span>
+              <span class="tech-chip">@dnd-kit</span>
+              <span class="tech-chip">LocalStorage API</span>
+              <span class="tech-chip">CSS Modules</span>
+            </div>
+            <div class="module-actions">
+              <a href="https://github.com" target="_blank" class="module-link"
+                >EXECUTE LIVE MODULE &nearr;</a
+              >
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="module-link"
+                style="color: var(--text-mute)"
+                >[SOURCE CODE]</a
+              >
+            </div>
+          </div>
+
+          <div class="module-card tilt-card">
+            <div class="module-header">
+              <span class="module-id">[MOD-02 // AI_SYNTHESIS]</span>
+              <span class="module-status ai">AI ENGINE v2.0</span>
+            </div>
+            <h3 class="module-title">COVERCRAFT</h3>
+            <p class="module-desc">
+              Intelligent career document synthesizer integrating Google Gemini
+              2.0 Flash API. Automatically parses raw PDF resumes, extracts
+              semantic skill profiles, and generates tailored cover letters with
+              custom template-engine fallback logic.
+            </p>
+            <div class="module-tech">
+              <span class="tech-chip">Gemini 2.0 Flash API</span>
+              <span class="tech-chip">PDF Parsing Engine</span>
+              <span class="tech-chip">Javascript ES6+</span>
+              <span class="tech-chip">Async Pipelines</span>
+            </div>
+            <div class="module-actions">
+              <a href="https://github.com" target="_blank" class="module-link"
+                >EXECUTE LIVE MODULE &nearr;</a
+              >
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="module-link"
+                style="color: var(--text-mute)"
+                >[SOURCE CODE]</a
+              >
+            </div>
+          </div>
+
+          <div class="module-card tilt-card">
+            <div class="module-header">
+              <span class="module-id">[MOD-03 // SMB_AGENCY_PORTAL]</span>
+              <span class="module-status">PRODUCTION LIVE</span>
+            </div>
+            <h3 class="module-title">CAFE KAVA</h3>
+            <p class="module-desc">
+              Full-stack digital storefront engineered for commercial
+              hospitality. Features hardware-accelerated hero sliders,
+              interactive lightbox image galleries, and a high-conversion
+              real-time table reservation system.
+            </p>
+            <div class="module-tech">
+              <span class="tech-chip">Vanilla JS</span>
+              <span class="tech-chip">Responsive Grid</span>
+              <span class="tech-chip">Lightbox Architecture</span>
+              <span class="tech-chip">Form Validation</span>
+            </div>
+            <div class="module-actions">
+              <a href="https://github.com" target="_blank" class="module-link"
+                >EXECUTE LIVE MODULE &nearr;</a
+              >
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="module-link"
+                style="color: var(--text-mute)"
+                >[SOURCE CODE]</a
+              >
+            </div>
+          </div>
+          <div class="module-card tilt-card">
+            <div class="module-header">
+              <span class="module-id">[MOD-04 // FIN_TELEMETRY]</span>
+              <span class="module-status">SYSTEM ACTIVE</span>
+            </div>
+            <h3 class="module-title">CASH-FLOW DASHBOARD</h3>
+            <p class="module-desc">
+              Comprehensive enterprise financial tracking workstation. Analyzes
+              expense metrics via multi-layer Chart.js visualizations, generates
+              downloadable PDF executive summaries via jsPDF, and features live
+              currency conversion.
+            </p>
+            <div class="module-tech">
+              <span class="tech-chip">Chart.js</span>
+              <span class="tech-chip">jsPDF Generator</span>
+              <span class="tech-chip">REST Currency APIs</span>
+              <span class="tech-chip">DOM Telemetry</span>
+            </div>
+            <div class="module-actions">
+              <a href="https://github.com" target="_blank" class="module-link"
+                >EXECUTE LIVE MODULE &nearr;</a
+              >
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="module-link"
+                style="color: var(--text-mute)"
+                >[SOURCE CODE]</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="signal" class="section-wrapper reveal">
+        <div class="section-header">
+          <div class="section-title">
+            <span>03 // SIGNAL READOUT</span>
+            <span class="section-tag">CAPACITY SPECTRUM</span>
+          </div>
+          <div class="section-meta">SIGNAL FIDELITY: 99.4%</div>
+        </div>
+
+        <div class="signal-grid">
+          <div class="signal-group">
+            <div class="signal-group-title">
+              // FRONTEND &amp; WEB ARCHITECTURE
+            </div>
+            <div class="signal-item">
+              <div class="signal-header">
+                <span class="signal-name">React 19 / Modern Ecosystems</span>
+                <span class="signal-freq">92 MHz [EXCELLENT]</span>
+              </div>
+              <div class="signal-bar-bg">
+                <div class="signal-bar-fill orange" data-width="92%"></div>
+              </div>
+            </div>
+            <div class="signal-item">
+              <div class="signal-header">
+                <span class="signal-name"
+                  >Javascript (ES6+) / Async Architecture</span
+                >
+                <span class="signal-freq">95 MHz [EXCELLENT]</span>
+              </div>
+              <div class="signal-bar-bg">
+                <div class="signal-bar-fill orange" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="signal-item">
+              <div class="signal-header">
+                <span class="signal-name"
+                  >HTML5 / Vanilla CSS / UI Engineering</span
+                >
+                <span class="signal-freq">98 MHz [OPTIMAL]</span>
+              </div>
+              <div class="signal-bar-bg">
+                <div class="signal-bar-fill orange" data-width="98%"></div>
+              </div>
+            </div>
+            <div class="signal-item">
+              <div class="signal-header">
+                <span class="signal-name"
+                  >Vite / Webpack Build Orchestration</span
+                >
+                <span class="signal-freq">88 MHz [NOMINAL]</span>
+              </div>
+              <div class="signal-bar-bg">
+                <div class="signal-bar-fill orange" data-width="88%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="signal-group">
+            <div class="signal-group-title">// AI, HARDWARE &amp; SYSTEMS</div>
+            <div class="signal-item">
+              <div class="signal-header">
+                <span class="signal-name"
+                  >LLM Integration (Google Gemini API / Prompts)</span
+                >
+                <span class="signal-freq">90 MHz [ADVANCED]</span>
+              </div>
+              <div class="signal-bar-bg">
+                <div class="signal-bar-fill amber" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="signal-item">
+              <div class="signal-header">
+                <span class="signal-name"
+                  >Three.js / WebGL 3D Visualization</span
+                >
+                <span class="signal-freq">85 MHz [NOMINAL]</span>
+              </div>
+              <div class="signal-bar-bg">
+                <div class="signal-bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="signal-item">
+              <div class="signal-header">
+                <span class="signal-name"
+                  >Hardware &amp; IoT Prototyping (Sensors/Actuators)</span
+                >
+                <span class="signal-freq">87 MHz [ADVANCED]</span>
+              </div>
+              <div class="signal-bar-bg">
+                <div class="signal-bar-fill" data-width="87%"></div>
+              </div>
+            </div>
+            <div class="signal-item">
+              <div class="signal-header">
+                <span class="signal-name"
+                  >Git Version Control / Agency Leadership</span
+                >
+                <span class="signal-freq">94 MHz [EXCELLENT]</span>
+              </div>
+              <div class="signal-bar-bg">
+                <div class="signal-bar-fill amber" data-width="94%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="log" class="section-wrapper reveal">
+        <div class="section-header">
+          <div class="section-title">
+            <span>04 // SYSTEM LOG</span>
+            <span class="section-tag">EXECUTION HISTORY</span>
+          </div>
+          <div class="section-meta">LOG_BUFFER: 5 EVENTS</div>
+        </div>
+
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-controls">
+              <div class="dot red"></div>
+              <div class="dot yellow"></div>
+              <div class="dot green"></div>
+            </div>
+            <div class="terminal-title">console://sys.log -- 80x25</div>
+            <div style="font-size: 0.7rem; color: var(--text-mute)">
+              READ_ONLY
+            </div>
+          </div>
+          <div class="terminal-body">
+            <div class="log-entry">
+              <div class="log-time">[CURRENT_LIVE]</div>
+              <div class="log-content">
+                <span class="log-event">ENG_INTERN -&gt; Prodesk IT</span>
+                Architecting responsive frontend interfaces and enterprise
+                client components. Optimizing UI rendering performance,
+                establishing modular component libraries, and collaborating on
+                production rollouts.
+              </div>
+            </div>
+
+            <div class="log-entry">
+              <div class="log-time">[2025.10 - PRES]</div>
+              <div class="log-content">
+                <span class="log-event"
+                  >FOUNDER &amp; LEAD ARCHITECT -&gt; Optiq Solutions</span
+                >
+                Founded and operate a specialized digital agency empowering
+                Indian SMBs. Designing custom web ecosystems, full-stack landing
+                platforms, and automated digital workflows to drive commercial
+                growth.
+              </div>
+            </div>
+
+            <div class="log-entry">
+              <div class="log-time">[2025.08 - SIH]</div>
+              <div class="log-content">
+                <span class="log-event hardware"
+                  >HACKATHON FINALIST -&gt; Smart India Hackathon 2025 //
+                  Sentinel</span
+                >
+                Engineered "Sentinel"—an IoT women's safety wearable equipped
+                with low-latency emergency telemetry, GPS triangulation, and
+                automated alert broadcast to nearest first responders.
+              </div>
+            </div>
+
+            <div class="log-entry">
+              <div class="log-time">[2025.03 - TIDES]</div>
+              <div class="log-content">
+                <span class="log-event hardware"
+                  >HARDWARE INNOVATION -&gt; IIT Roorkee TIDES SportsTech //
+                  GlideCart</span
+                >
+                Built "GlideCart"—an autonomous, sensor-driven airport luggage
+                trolley utilizing ultrasonic spatial awareness and robotic motor
+                control to assist travelers seamlessly.
+              </div>
+            </div>
+
+            <div class="log-entry">
+              <div class="log-time">[2024.08 - PRES]</div>
+              <div class="log-content">
+                <span class="log-event edu"
+                  >DEGREE PROGRAM -&gt; B.Tech CSE (AI &amp; ML) // Haridwar
+                  University</span
+                >
+                Pursuing Bachelor of Technology with specialization in
+                Artificial Intelligence and Machine Learning. Advanced
+                coursework in data structures, algorithms, neural architectures,
+                and system design.
+              </div>
+            </div>
+
+            <div
+              style="
+                padding-top: 1.5rem;
+                color: var(--circuit);
+                font-family: var(--font-mono);
+              "
+            >
+              system@roorkee-node:~$ status --check-next-milestone<br />
+              &gt; TARGET ASSIGNED: Full-Stack AI Engineer Role
+              <span class="log-cursor"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="connect"
+        class="section-wrapper reveal"
+        style="border-bottom: none"
+      >
+        <div class="section-header">
+          <div class="section-title">
+            <span>05 // CONNECTOR PANEL</span>
+            <span class="section-tag">I/O INTERFACE</span>
+          </div>
+          <div class="section-meta">PORTS READY FOR HANDSHAKE</div>
+        </div>
+
+        <div style="margin-bottom: 3rem">
+          <h2
+            style="
+              font-family: var(--font-display);
+              font-size: clamp(3rem, 6vw, 5.5rem);
+              line-height: 0.95;
+              color: var(--text);
+            "
+          >
+            ESTABLISH DIRECT LINK
+          </h2>
+          <p
+            style="
+              color: var(--text-mute);
+              font-size: 1.1rem;
+              max-width: 600px;
+              margin-top: 0.75rem;
+            "
+          >
+            Ready to initiate collaboration on AI-driven platforms, frontend
+            architecture, or high-speed web infrastructure. Select an open port
+            below.
+          </p>
+        </div>
+
+        <div class="connect-ports">
+          <a href="mailto:dakshchoudhary@example.com" class="port-panel">
+            <div class="port-header">
+              <span>[PORT-01 // SMTP TX/RX]</span>
+              <div class="port-pin"></div>
+            </div>
+            <div class="port-title">EMAIL TERMINAL</div>
+            <div class="port-address">TRANSMIT PACKET &nearr;</div>
+          </a>
+
+          <a href="https://github.com" target="_blank" class="port-panel">
+            <div class="port-header">
+              <span>[PORT-02 // GIT REFS]</span>
+              <div class="port-pin"></div>
+            </div>
+            <div class="port-title">GITHUB REPOSITORY</div>
+            <div class="port-address">INSPECT CODEBASE &nearr;</div>
+          </a>
+
+          <a href="https://linkedin.com" target="_blank" class="port-panel">
+            <div class="port-header">
+              <span>[PORT-03 // PRO NODE]</span>
+              <div class="port-pin"></div>
+            </div>
+            <div class="port-title">LINKEDIN NETWORK</div>
+            <div class="port-address">ESTABLISH HANDSHAKE &nearr;</div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        SYSTEM OS v3.4 // DAKSH CHOUDHARY // HARIDWAR UNIVERSITY, ROORKEE
+      </div>
+      <div style="color: var(--circuit)">
+        ALL SYSTEMS NOMINAL // ZERO LATENCY
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
