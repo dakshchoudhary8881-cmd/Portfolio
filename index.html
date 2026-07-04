@@ -45,14 +45,30 @@
         <li><a href="#log" class="nav-link">Log</a></li>
         <li><a href="#connect" class="nav-link">Connect</a></li>
       </ul>
-      <div class="nav-status">
-        <span
-          >UPTIME:
-          <span class="system-clock" id="uptime-clock">00:00:00</span></span
-        >
-        <span style="color: var(--circuit)">● ONLINE</span>
+      <div class="nav-right">
+        <div class="nav-status">
+          <span class="uptime-text"
+            >UPTIME:
+            <span class="system-clock" id="uptime-clock">00:00:00</span></span
+          >
+          <span style="color: var(--circuit)">● ONLINE</span>
+        </div>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </nav>
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#specs" class="mobile-nav-link">01 // Specs</a></li>
+        <li><a href="#modules" class="mobile-nav-link">02 // Modules</a></li>
+        <li><a href="#signal" class="mobile-nav-link">03 // Signal</a></li>
+        <li><a href="#log" class="mobile-nav-link">04 // Log</a></li>
+        <li><a href="#connect" class="mobile-nav-link">05 // Connect</a></li>
+      </ul>
+    </div>
     <main>
       <section class="hero-section">
         <div class="hero-webgl-container">
@@ -67,7 +83,7 @@
             </div>
             <h1 class="hero-name">DAKSH CHOUDHARY</h1>
             <div class="hero-role">
-              &gt; FRONTEND ENGINEERING INTERN &amp; FOUNDER
+              &gt; FRONTEND ENGINEERING INTERN &amp; AI SPECIALIST
             </div>
             <p class="hero-bio">
               Engineering scalable web systems, autonomous hardware IoT devices,
@@ -89,9 +105,9 @@
             <div class="telemetry-value">Frontend Intern @ Prodesk IT</div>
           </div>
           <div class="telemetry-col">
-            <div class="telemetry-label">VENTURE STATUS</div>
+            <div class="telemetry-label">SPECIALIZATION</div>
             <div class="telemetry-value highlight">
-              Founder @ Optiq Solutions
+              AI &amp; Web Systems
             </div>
           </div>
           <div class="telemetry-col">
@@ -130,10 +146,9 @@
             <p>
               As a <strong>Frontend Engineering Intern at Prodesk IT</strong>, I
               craft reactive, production-grade interfaces optimized for
-              performance and strict state management. Simultaneously, as the
-              <strong>Founder of Optiq Solutions</strong>, I lead digital
-              transformation for Indian SMBs—architecting custom web platforms
-              that accelerate revenue generation and automate client operations.
+              performance and strict state management. Additionally, I design
+              full-stack web platforms and automated workflows that accelerate
+              performance and streamline operations.
             </p>
             <p>
               Unlike pure software developers, my background extends directly
@@ -177,9 +192,9 @@
               </div>
             </div>
             <div class="datasheet-row">
-              <div class="datasheet-key">LEADERSHIP</div>
+              <div class="datasheet-key">SPECIALIZATION</div>
               <div class="datasheet-val amber">
-                Founder @ Optiq Solutions (Digital Agency)
+                AI &amp; Web Systems Engineering
               </div>
             </div>
             <div class="datasheet-row">
@@ -497,12 +512,11 @@
               <div class="log-time">[2025.10 - PRES]</div>
               <div class="log-content">
                 <span class="log-event"
-                  >FOUNDER &amp; LEAD ARCHITECT -&gt; Optiq Solutions</span
+                  >LEAD WEB ARCHITECT -&gt; Digital Systems &amp; Platforms</span
                 >
-                Founded and operate a specialized digital agency empowering
-                Indian SMBs. Designing custom web ecosystems, full-stack landing
-                platforms, and automated digital workflows to drive commercial
-                growth.
+                Architecting specialized full-stack web applications and
+                digital ecosystems. Designing custom landing platforms and
+                automated digital workflows to drive performance and growth.
               </div>
             </div>
 
@@ -574,25 +588,11 @@
           <div class="section-meta">PORTS READY FOR HANDSHAKE</div>
         </div>
 
-        <div style="margin-bottom: 3rem">
-          <h2
-            style="
-              font-family: var(--font-display);
-              font-size: clamp(3rem, 6vw, 5.5rem);
-              line-height: 0.95;
-              color: var(--text);
-            "
-          >
+        <div class="connect-header-text">
+          <h2 class="connect-title">
             ESTABLISH DIRECT LINK
           </h2>
-          <p
-            style="
-              color: var(--text-mute);
-              font-size: 1.1rem;
-              max-width: 600px;
-              margin-top: 0.75rem;
-            "
-          >
+          <p class="connect-desc">
             Ready to initiate collaboration on AI-driven platforms, frontend
             architecture, or high-speed web infrastructure. Select an open port
             below.
